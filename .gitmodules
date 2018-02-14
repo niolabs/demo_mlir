@@ -31,3 +31,6 @@
 [submodule "blocks/join"]
 	path = blocks/join
 	url = git://github.com/nio-blocks/join.git
+[submodule "blocks/tensor_flow"]
+	path = blocks/tensor_flow
+	url = git://github.com/nio-blocks/tensor_flow.git
