@@ -73,3 +73,6 @@ docs/_build/
 logs
 etc/persist/
 nio.err
+
+# tensorflow
+tf_models/
