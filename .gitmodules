@@ -34,9 +34,6 @@
 [submodule "blocks/tensor_flow"]
 	path = blocks/tensor_flow
 	url = git://github.com/nio-blocks/tensor_flow.git
-[submodule "http_requests"]
-	path = http_requests
-	url = git@github.com:nio-blocks/http_requests.git
 [submodule "blocks/http_requests"]
 	path = blocks/http_requests
 	url = git@github.com:nio-blocks/http_requests.git
