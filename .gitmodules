@@ -36,7 +36,25 @@
 	url = git://github.com/nio-blocks/tensor_flow.git
 [submodule "blocks/http_requests"]
 	path = blocks/http_requests
-	url = git@github.com:nio-blocks/http_requests.git
+	url = git://github.com/nio-blocks/http_requests.git
 [submodule "blocks/nio_command"]
 	path = blocks/nio_command
-	url = git@github.com:nio-blocks/nio_command.git
+	url = git://github.com/nio-blocks/nio_command.git
+[submodule "blocks/buffer"]
+	path = blocks/buffer
+	url = git://github.com/nio-blocks/buffer.git
+[submodule "blocks/signal_list_shuffler"]
+	path = blocks/signal_list_shuffler
+	url = git://github.com/nio-blocks/signal_list_shuffler.git
+[submodule "blocks/twilio"]
+	path = blocks/twilio
+	url = git://github.com/nio-blocks/twilio.git
+[submodule "blocks/email"]
+	path = blocks/email
+	url = git://github.com/nio-blocks/email.git
+[submodule "blocks/signal_timeout"]
+	path = blocks/signal_timeout
+	url = git://github.com/nio-blocks/signal_timeout.git
+[submodule "blocks/debounce"]
+	path = blocks/debounce
+	url = git://github.com/nio-blocks/debounce.git
