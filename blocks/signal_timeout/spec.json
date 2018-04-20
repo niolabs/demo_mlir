@@ -1,0 +1,53 @@
+{
+  "nio/SignalTimeout": {
+    "version": "0.1.1",
+    "description": "The SignalTimeout block will emit a timeout signal when no signals have been processed for the defined `intervals`. A timeout signal is the last signal to enter the block with an added `group` attribute that specifies the group (default `None`) and a `timeout` attribute that is a python `datetime.timedelta` specifying the configured `interval` that triggered the signal.",
+    "categories": [
+      "Signal Flow"
+    ],
+    "properties": {
+      "backup_interval": {
+        "title": "Backup Interval",
+        "type": "TimeDeltaType",
+        "description": "An interval of time that specifies how often persisted data is saved.",
+        "default": {
+          "seconds": 3600
+        }
+      },
+      "group_by": {
+        "title": "Group By",
+        "type": "Type",
+        "description": "The signal attribute on the incoming signal whose values will be used to define groups on the outgoing signal.",
+        "default": null
+      },
+      "intervals": {
+        "title": "Timeout Intervals",
+        "type": "ListType",
+        "description": "After a signal, if another one does not enter the block for this amount of time, emit a timeout signal.",
+        "default": []
+      },
+      "load_from_persistence": {
+        "title": "Load from Persistence?",
+        "type": "BoolType",
+        "description": "If true, when the block is restarted it will restart with the previous amount of remaining time for the current interval.",
+        "default": true
+      }
+    },
+    "inputs": {
+      "default": {
+        "description": "Any list of signals."
+      }
+    },
+    "outputs": {
+      "default": {
+        "description": "The last signal to enter the block with additional attributes **timeout** and **group**."
+      }
+    },
+    "commands": {
+      "groups": {
+        "description": "Display the active groups tracked by the block",
+        "params": {}
+      }
+    }
+  }
+}

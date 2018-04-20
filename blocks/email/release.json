@@ -1,0 +1,7 @@
+{
+  "nio/Email": {
+    "language": "Python",
+    "url": "git://github.com/nio-blocks/email.git",
+    "version": "0.1.0"
+  }
+}

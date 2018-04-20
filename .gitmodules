@@ -1,0 +1,60 @@
+[submodule "blocks/communication"]
+	path = blocks/communication
+	url = git://github.com/nio-blocks/communication.git
+[submodule "blocks/filter"]
+	path = blocks/filter
+	url = git://github.com/nio-blocks/filter.git
+[submodule "blocks/logger"]
+	path = blocks/logger
+	url = git://github.com/nio-blocks/logger.git
+[submodule "blocks/simulator"]
+	path = blocks/simulator
+	url = git://github.com/nio-blocks/simulator.git
+[submodule "service_tests"]
+	path = service_tests
+	url = git://github.com/niolabs/service_tests.git
+[submodule "blocks/attribute_selector"]
+	path = blocks/attribute_selector
+	url = git://github.com/nio-blocks/attribute_selector.git
+[submodule "blocks/merge_streams"]
+	path = blocks/merge_streams
+	url = git://github.com/nio-blocks/merge_streams.git
+[submodule "blocks/replicator"]
+	path = blocks/replicator
+	url = git://github.com/nio-blocks/replicator.git
+[submodule "blocks/modifier"]
+	path = blocks/modifier
+	url = git://github.com/nio-blocks/modifier.git
+[submodule "blocks/state"]
+	path = blocks/state
+	url = git://github.com/nio-blocks/state.git
+[submodule "blocks/join"]
+	path = blocks/join
+	url = git://github.com/nio-blocks/join.git
+[submodule "blocks/tensor_flow"]
+	path = blocks/tensor_flow
+	url = git://github.com/nio-blocks/tensor_flow.git
+[submodule "blocks/http_requests"]
+	path = blocks/http_requests
+	url = git://github.com/nio-blocks/http_requests.git
+[submodule "blocks/nio_command"]
+	path = blocks/nio_command
+	url = git://github.com/nio-blocks/nio_command.git
+[submodule "blocks/buffer"]
+	path = blocks/buffer
+	url = git://github.com/nio-blocks/buffer.git
+[submodule "blocks/signal_list_shuffler"]
+	path = blocks/signal_list_shuffler
+	url = git://github.com/nio-blocks/signal_list_shuffler.git
+[submodule "blocks/twilio"]
+	path = blocks/twilio
+	url = git://github.com/nio-blocks/twilio.git
+[submodule "blocks/email"]
+	path = blocks/email
+	url = git://github.com/nio-blocks/email.git
+[submodule "blocks/signal_timeout"]
+	path = blocks/signal_timeout
+	url = git://github.com/nio-blocks/signal_timeout.git
+[submodule "blocks/debounce"]
+	path = blocks/debounce
+	url = git://github.com/nio-blocks/debounce.git

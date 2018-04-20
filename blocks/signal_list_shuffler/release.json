@@ -1,0 +1,7 @@
+{
+  "nio/SignalListShuffler": {
+    "language": "Python",
+    "url": "git://github.com/nio-blocks/signal_list_shuffler.git",
+    "version": "0.1.0"
+  }
+}

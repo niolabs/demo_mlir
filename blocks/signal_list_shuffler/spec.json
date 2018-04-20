@@ -1,0 +1,29 @@
+{
+  "nio/SignalListShuffler": {
+    "version": "0.1.0",
+    "description": "Shuffle (randomize) the order of an incoming signal list.",
+    "categories": [
+      "Signal Flow",
+      "Signal Inspection"
+    ],
+    "properties": {
+      "seed": {
+        "title": "Random Seed",
+        "type": "Type",
+        "description": "(hidden) Set to any numeric value to generate repeatable random sequences.",
+        "default": null
+      }
+    },
+    "inputs": {
+      "default": {
+        "description": "Any list of signals."
+      }
+    },
+    "outputs": {
+      "default": {
+        "description": "The same list of signals in random order."
+      }
+    },
+    "commands": {}
+  }
+}

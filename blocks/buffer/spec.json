@@ -1,0 +1,77 @@
+{
+  "nio/Buffer": {
+    "version": "0.1.1",
+    "description": "The Buffer block will collect all incoming signals and emit them every **interval**. If **interval_duration** is non-zero, then the signal emitted each **interval** will be all the signals collected over the last **interval_duration**.",
+    "categories": [
+      "Signal Flow"
+    ],
+    "properties": {
+      "backup_interval": {
+        "title": "Backup Interval",
+        "type": "TimeDeltaType",
+        "description": "An interval of time that specifies how often persisted data is saved.",
+        "default": {
+          "seconds": 3600
+        }
+      },
+      "group_by": {
+        "title": "Group By",
+        "type": "Type",
+        "description": "The signal attribute on the incoming signal whose values will be used to define groups on the outgoing signal.",
+        "default": null
+      },
+      "interval": {
+        "title": "Buffer Interval",
+        "type": "TimeDeltaType",
+        "description": "Time interval at which signals are emitted.",
+        "default": {
+          "seconds": 1
+        }
+      },
+      "interval_duration": {
+        "title": "Interval Duration",
+        "type": "TimeDeltaType",
+        "description": "At each **interval**, emit signals collected during this amount of time. If unspecifed or 0, then all incoming signals collected during the last **interval** will be emitted.",
+        "default": null
+      },
+      "load_from_persistence": {
+        "title": "Load from Persistence?",
+        "type": "BoolType",
+        "description": "If `True`, the block’s state will be saved when the block is stopped, and reloaded once the block is restarted.",
+        "default": true
+      },
+      "signal_start": {
+        "title": "Start Interval on Signal?",
+        "type": "BoolType",
+        "description": "If `True`, start the first interval when a signal is received.",
+        "default": false
+      }
+    },
+    "inputs": {
+      "default": {
+        "description": "Any list of signals."
+      }
+    },
+    "outputs": {
+      "default": {
+        "description": "Signals stored since the time specified by the **interval_duration**."
+      }
+    },
+    "commands": {
+      "emit": {
+        "params": {
+          "group": {
+            "title": "group",
+            "default": null,
+            "allow_none": true
+          }
+        },
+        "description": "Emit stored signals immediately."
+      },
+      "groups": {
+        "params": {},
+        "description": "View information on current groups."
+      }
+    }
+  }
+}
