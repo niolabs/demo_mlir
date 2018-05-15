@@ -1,0 +1,5 @@
+requests
+oauth2client
+tensorflow>=1.4.0
+numpy
+twilio~=5.7
